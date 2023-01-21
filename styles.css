@@ -1,55 +1,44 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans');
-
-body { 
-    background-color: #131313;
-    font-family: 'Open Sans',sans-serif;
-    color: #ededed
+.noto-sans {
+  font-family: 'Noto Sans', Arial, sans-serif;
 }
 
-*
-{
-    margin: 0.2em;
+body {
+  margin: 0;
+  padding: 0;
 }
 
-html, body {
-    height: 50%;
-    text-align: center;
-    margin: 1em;
-    margin-left: 3em;
-    margin-right: 3em;
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.header {
-
+.logo img {
+  max-width: 100%;
 }
 
-.footer {
-    text-align: center;
+.headline h1 {
+  font-size: 36px;
+  margin-top: 0;
 }
 
-h1 {
-    font-weight: 600;
-}
-h3 {
-    font-weight: 400;
-}
-
-#container {
-    width: auto;
-    margin: auto;
-    display: flex;
-    flex-wrap: wrap;
-    grid-template-columns: repeat(auto-fit, minmax(24em, 1fr));    
-    margin: 1em;
-
+.text p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
 }
 
-#container>div {
-    background-color: #7a81a333;
-    border-radius: 0.2em;
-    text-align: left;
-    padding: 0.5rem;
-    margin: 0.5em;
-    flex: 1 1 24em;
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 1em;
+  text-align: center;
+}
 
+@media only screen and (max-width: 600px) {
+  .container {
+    flex-direction: column;
+  }
 }
