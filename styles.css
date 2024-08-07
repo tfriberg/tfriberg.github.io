@@ -1,25 +1,28 @@
 body {
     font-family: Arial, sans-serif;
     display: flex;
-    justify-content: left;
+    justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
     background-color: #f4f4f4;
     flex-direction: column;
+    transition: background-color 0.3s, color 0.3s;
 }
 
-.card {
+.card, footer {
     background: white;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     text-align: center;
     max-width: 400px;
+    transition: background 0.3s, color 0.3s;
 }
 
-h1 {
-    color: #333;
+.logo {
+    max-width: 100%;
+    height: auto;
 }
 
 h2 {
@@ -44,22 +47,38 @@ a:hover {
     margin: 10px 5px;
     color: #1a73e8;
     font-size: 20px;
+    transition: color 0.3s;
 }
 
 .social-links a:hover {
     color: #0056b3;
 }
 
-footer {
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    text-align: center;
-    max-width: 400px;
-    margin-top: 20px;
-}
-
 footer p {
     margin: 5px 0;
+}
+
+.toggle-switch {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+.dark-mode .card, 
+.dark-mode footer {
+    background: #1e1e1e;
+    color: #ffffff;
+}
+
+.dark-mode a {
+    color: #bb86fc;
+}
+
+.dark-mode a:hover {
+    color: #ff79c6;
 }
