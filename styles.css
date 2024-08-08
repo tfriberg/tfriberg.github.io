@@ -1,12 +1,12 @@
 body {
-    font-family: Rubik-light, Helvetica, Arial, sans-serif;
-    color: #B5BDC9;
+    font-family: Rubik, Helvetica, Arial, sans-serif;
+    color: #b5bdc9;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-color: #121212;
+    background-color: #3a4350;
     flex-direction: column;
     transition:
         background-color 0.3s,
@@ -14,11 +14,11 @@ body {
 }
 
 .card, footer {
-    background: #14171B;
+    background: #14171b7b;
     padding: 20px;
     margin: 10px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
     text-align: center;
     width: 400px;
     transition:
@@ -35,18 +35,36 @@ body {
     height: auto;
 }
 
+img {
+   filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.7));
+}
+
+
 h2 {
-    color: #B5BDC9;
+    color: #b5bdc9;
+    font-weight: 500;
 }
 
 a {
-    color: #f4e2b9;
+    color: #b2bce4;
     text-decoration: none;
 }
 
 a:hover {
     text-decoration: none;
     color: #dea116;
+    text-shadow: 0 0 8px #ff0000;
+
+}
+
+dfn {
+    font-style: normal;
+    color: #b2bce4;
+}
+
+dfn:hover {
+    text-shadow: 0 0 8px #ff0000;
+    cursor: help;
 }
 
 .social-links {
@@ -56,17 +74,17 @@ a:hover {
 .social-links a {
     display: inline-block;
     margin: 5px 5px;
-    color: #f4e2b9;
-    font-size: 16px;
+    color: #b2bce4;
     transition: color 0.3s;
 }
 
 .social-links a:hover {
     color: #dea116;
+    text-shadow: 0 0 8px #ff0000;
+
 }
 
 footer p {
     margin: 5px 0;
     font-size: small;
 }
-
