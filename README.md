@@ -19,5 +19,5 @@ My solutions are tailored to meet specific user needs and goals, while being int
 **Company information**
 * F-tax certificate
 * VAT SE700412053601
-* IBAN: LT223250060789614202
+* IBAN: LT63 3250 0671 0448 5736
 * BIC: REVOLT21
