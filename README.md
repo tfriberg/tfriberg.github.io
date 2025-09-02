@@ -1,4 +1,7 @@
 # tfriberg.github.io
+
+![image](/assets/logo.svg)
+
 With over 20 years of experience in the tech industry, I offer specialized user-centered design consulting services to companies in the technology and software sectors remotely.
 
 My solutions are tailored to meet specific user needs and goals, while being intuitive, easy to use, and affordable to implement.
