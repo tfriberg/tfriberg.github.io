@@ -1,91 +1,129 @@
 body {
-    font-family: Rubik, Helvetica, Arial, sans-serif;
-    color: #b5bdc9;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 10px;
-    background-color: #3a4350;
-    flex-direction: column;
-    transition:
-        background-color 0.3s,
-        color 0.3s;
-}
+        font-family: Raleway, Helvetica, Arial, sans-serif;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        margin: 0 auto;
+        padding: 1rem;
+        color: #b5bdc9;
+        background-color: #3a4350;
+        transition: background-color 0.3s, color 0.3s;
+    }
 
-.card, footer {
-    background: #14171b7b;
-    padding: 20px;
-    margin: 10px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
-    text-align: center;
-    width: 400px;
-    transition:
-        background 0.3s,
-        color 0.3s;
-}
+    body {
+        font-size: 1rem;
+    }
 
-.card p {
-    text-align: left;
-}
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+    }
 
-.logo {
-    max-width: 100%;
-    height: auto;
-}
+    @media (max-width: 600px) {
+        .container,
+        .container_footer {
+            margin: 0.5rem auto;
+            padding: 1rem;
+        }
+    }
 
-img {
-   -webkit-filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.7));
-   filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.7));
-}
+    .container {
+        background-color: #19222f7b;
+        padding: 2rem;
+        border-radius: 1rem;
+        border: 1px solid #19222f;
+        margin: 0 0 0.5em 0;
+        -webkit-filter: drop-shadow(0 0.125rem 0.25rem rgba(0, 0, 0, 0.25));
+        filter: drop-shadow(0 0.125rem 0.25rem rgba(0, 0, 0, 0.25));
+    }
+
+    .container,
+    .container_footer {
+        width: 100%;
+        max-width: 30rem;
+        margin: 1rem auto;
+        padding: 2rem;
+        box-sizing: border-box;
+    }
 
 
-h2 {
-    color: #b5bdc9;
-    font-weight: 500;
-}
+    .container_footer {
+        background-color: #19222f7b;
+        padding: 2rem;
+        /* Match .container */
+        border-radius: 1rem;
+        border: 1px solid #19222f;
+        margin: 0 0 0.5em 0;
+        box-sizing: border-box;
+        -webkit-filter: drop-shadow(0 0.125rem 0.25rem rgba(0, 0, 0, 0.25));
+        filter: drop-shadow(0 0.125rem 0.25rem rgba(0, 0, 0, 0.25));
+    }
 
-a {
-    color: #b2bce4;
-    text-decoration: none;
-}
+    .social {
+        list-style-type: none;
+        padding: 0;
+        margin: 1em 0 0 0;
+        text-align: center;
+    }
 
-a:hover {
-    text-decoration: none;
-    color: #dea116;
-    text-shadow: 0 0 8px #ff0000;
+    .footer {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+    }
 
-}
+    h2 {
+        color: #b5bdc9;
+        font-weight: 400;
+        text-align: center;
+        margin: 0.5em 0 0 0;
+        -webkit-filter: drop-shadow(0 0.125rem 0.25rem rgba(0, 0, 0, 0.7));
+        filter: drop-shadow(0 0.125rem 0.25rem rgba(0, 0, 0, 0.7));
+    }
 
-dfn {
-    font-style: normal;
-    color: #b2bce4;
-}
+    a {
+        color: #b2bce4;
+        text-decoration: none;
 
-dfn:hover {
-    text-shadow: 0 0 8px #ff0000;
-    cursor: help;
-}
+    }
 
-.social-links {
-    margin-top: 10px;
-}
+    p,
+    li {
+        -webkit-filter: drop-shadow(0 0.125rem 0.25rem rgba(0, 0, 0, 0.7));
+        filter: drop-shadow(0 0.125rem 0.25rem rgba(0, 0, 0, 0.7));
+    }
 
-.social-links a {
-    display: inline-block;
-    margin: 5px 5px;
-    color: #b2bce4;
-    transition: color 0.3s;
-}
+    a:hover {
+        text-decoration: none;
+        color: #dea116;
+        text-shadow: 0 0 0.25rem #ff0000;
+        transition: color 0.3s;
+        -webkit-filter: drop-shadow(0 0.125rem 0.25rem rgba(0, 0, 0, 0));
+        filter: drop-shadow(0 0.125rem 0.25rem rgba(0, 0, 0, 0));
+    }
 
-.social-links a:hover {
-    color: #dea116;
-    text-shadow: 0 0 8px #ff0000;
+    ul,
+    li {
+        margin: 0.1rem;
+        padding: 0.25rem;
+    }
 
-}
+    .footer li {
+        font-size: smaller;
+    }
 
-footer p {
-    margin: 5px 0;
-    font-size: small;
-}
+    picture {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 0 2em 0;
+    }
+
+    img {
+        -webkit-filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.7));
+        filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.7));
+    }
