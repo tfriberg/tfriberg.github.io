@@ -3,68 +3,226 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="icon" href="/assets/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
-    <link rel="stylesheet" href="styles.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Passionate and inquisitive UX&nbspdesigner and information architect.">
-    <meta name="keywords" content="UX, designer, information architect, portfolio, CV, resume">
-    <meta name="author" content="Tomas Friberg">
-    <meta name="robots" content="index, follow">
-    <meta name="googlebot" content="index, follow">
-    <meta name="bingbot" content="index, follow">
-    <meta name="yandexbot" content="index, follow">
-    <title>Design Pending</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/assets/favicon.png" sizes="32x32" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caudex:ital,wght@0,400;0,700;1,400;1,700&family=Geist+Mono:wght@100..900&family=Jacquard+12&family=MedievalSharp&family=UnifrakturCook:wght@700&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <title>Design Pending - UX design and information architecture</title>
+
+    <style>
+        /* Reset default margins and ensure box-sizing is consistent */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Geist Mono", Helvetica, Arial, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            line-height: 1.3;
+            background-color: #292E36;
+            color: #B7BDC8;
+        }
+
+        /* Main container for content */
+        .container {
+            max-width: 40em;
+            /* Approx 50–75 characters per line */
+            width: 90dvw;
+            /* Use dynamic viewport width for responsiveness */
+            margin: 0 auto;
+            /* Center horizontally */
+            padding: 2rem;
+            /* Comfortable padding */
+        }
+
+        /* Ensure content doesn't touch screen edges on small devices */
+        @media (max-width: 600px) {
+            .container {
+                width: 95dvw;
+                /* Slightly narrower for very small screens */
+            }
+
+            svg {
+                width: 141px;
+            }
+        }
+
+        /* Typography adjustments for readability */
+        h1 {
+            font-size: 2rem;
+        }
+
+        h2,
+        h3 {
+            margin-top: 1em;
+
+        }
+
+        p {
+            font-size: 1rem;
+            margin-top: 0.5em;
+        }
+
+        a {
+            color: #b2bce4;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: none;
+            color: #dea116;
+            text-shadow: 0 0 8px #ff0000;
+
+        }
+
+        /* Optional: Improve readability with a max-width fallback for older browsers */
+        @supports not (width: 90dvw) {
+            .container {
+                width: 90%;
+            }
+        }
+
+        picture {
+            margin-left: -4em;
+        }
+
+        .social li {
+            display: inline;
+        }
+
+        li {
+            list-style-type: none;
+            line-height: 1.5;
+        }
+
+        .header {
+            max-width: 40em;
+            /* Approx 50–75 characters per line */
+            width: 90dvw;
+            /* Use dynamic viewport width for responsiveness */
+            margin: 0 auto;
+            /* Center horizontally */
+            padding: 2rem;
+            /* Comfortable padding */
+            display: inline-flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .footer {
+            margin-top: 2em;
+        }
+    </style>
 </head>
 
 <body>
     <div class="container">
-        <picture>
-            <img src="/assets/logo.png" alt="Design Pending" width="200" height="100" />
-        </picture>
-        <h2>Passionate and inquisitive UX&nbspdesigner and information architect.</h2>
-        <p>With over 20 years of experience in the tech industry, I offer
-            specialized user-centered design consulting services to companies in the
-            technology and software sectors remotely.</p>
-        <p>My solutions are tailored to meet specific user needs and goals, while
-            being intuitive, easy to use, and affordable to implement.</p>
-        <ul class="social">
-            <li> Visit my<a title="Visit my LinkedIn profile" href="https://www.linkedin.com/in/tfriberg/"
-                    target="_blank">
-                    <i class="fab fa-linkedin"></i> LinkedIn </a>&nbsp;|&nbsp;<a title="Visit my Github profile"
-                    href="https://github.com/tfriberg" target="_blank">
-                    <i class="fab fa-github"></i> GitHub </a>profile.</li>
-            <li>Download my
-                <a title="Download my portfolio" href="/assets/portfolio_tomas_friberg.pdf" target="_blank">
-                    <i class="fas fa-file-pdf"></i>&nbsp;Portfolio </a>&nbsp;|&nbsp;<a title="Download my CV"
-                    href="/assets/cv_tomas_friberg.pdf" target="_blank">
-                    <i class="fas fa-file-pdf"></i>&nbsp;CV </a>
-                &nbsp;|&nbsp;
-                <a title="Download my resume" href="/assets/resume_tomas_friberg.pdf" target="_blank">
-                    <i class="fas fa-file-pdf"></i>&nbsp;Resume</a>
-            </li>
-            <li><a title="Schedule an online meeting" href="https://app.simplymeet.me/designpending/" target="_blank">
-                    <i class="fas fa-calendar-alt"></i>&nbsp;Book a Meeting</a></li>
+        <div class="header">
+            <picture>
+                <svg width="282" height="160" viewBox="0 0 142 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M59.3735 22.0877H63.1166V43.068H59.3735V41.4681C58.6396 42.173 57.9011 42.6831 57.158 42.9985C56.424 43.3046 55.6259 43.4576 54.7635 43.4576C52.8277 43.4576 51.1534 42.7017 49.7406 41.1898C48.3278 39.6687 47.6213 37.7812 47.6213 35.5274C47.6213 33.19 48.3048 31.2747 49.6718 29.7814C51.0387 28.2881 52.6993 27.5415 54.6534 27.5415C55.5525 27.5415 56.3965 27.7131 57.1855 28.0563C57.9745 28.3995 58.7038 28.9142 59.3735 29.6006V22.0877ZM55.424 31.0475C54.2589 31.0475 53.291 31.4649 52.5204 32.2996C51.7497 33.1251 51.3644 34.1871 51.3644 35.4856C51.3644 36.7934 51.7543 37.8693 52.5341 38.7134C53.3231 39.5574 54.291 39.9794 55.4378 39.9794C56.6213 39.9794 57.6029 39.5667 58.3827 38.7412C59.1625 37.9064 59.5524 36.8166 59.5524 35.4717C59.5524 34.1547 59.1625 33.088 58.3827 32.2718C57.6029 31.4556 56.6167 31.0475 55.424 31.0475Z"
+                        fill="#9DA8B8" />
+                    <path
+                        d="M80.5054 36.5987H68.4367C68.611 37.6746 69.0743 38.5325 69.8266 39.1725C70.5881 39.8032 71.556 40.1186 72.7303 40.1186C74.1339 40.1186 75.3403 39.6223 76.3495 38.6299L79.5146 40.1325C78.7256 41.264 77.7807 42.1034 76.6798 42.6507C75.5789 43.1886 74.2715 43.4576 72.7578 43.4576C70.4092 43.4576 68.4964 42.7109 67.0193 41.2177C65.5423 39.7151 64.8037 37.8369 64.8037 35.583C64.8037 33.2735 65.5377 31.3582 67.0056 29.8371C68.4826 28.3067 70.3312 27.5415 72.5514 27.5415C74.9091 27.5415 76.8266 28.3067 78.3036 29.8371C79.7807 31.3582 80.5192 33.3709 80.5192 35.8752L80.5054 36.5987ZM76.7348 33.6074C76.4871 32.7634 75.9963 32.077 75.2624 31.5484C74.5376 31.0197 73.6936 30.7553 72.7303 30.7553C71.6844 30.7553 70.767 31.0521 69.978 31.6457C69.4826 32.0167 69.0239 32.6706 68.6019 33.6074H76.7348Z"
+                        fill="#9DA8B8" />
+                    <path
+                        d="M91.3163 30.0458L88.9907 32.397C88.0457 31.451 87.1879 30.9779 86.4173 30.9779C85.9953 30.9779 85.665 31.0707 85.4265 31.2562C85.1879 31.4324 85.0687 31.655 85.0687 31.924C85.0687 32.128 85.1421 32.3182 85.2889 32.4944C85.4448 32.6614 85.821 32.8932 86.4173 33.19L87.7934 33.8857C89.243 34.6091 90.2384 35.3465 90.7796 36.0978C91.3209 36.8491 91.5916 37.7302 91.5916 38.7412C91.5916 40.0861 91.1007 41.2084 90.1191 42.1081C89.1466 43.0078 87.8393 43.4576 86.1971 43.4576C84.0136 43.4576 82.2705 42.595 80.9678 40.8698L83.2797 38.3238C83.7201 38.8432 84.2338 39.2652 84.821 39.5899C85.4173 39.9052 85.9448 40.0629 86.4035 40.0629C86.8989 40.0629 87.298 39.9423 87.6008 39.7012C87.9035 39.46 88.0549 39.1818 88.0549 38.8664C88.0549 38.2821 87.509 37.7117 86.4173 37.1552L85.1512 36.5152C82.7293 35.2816 81.5183 33.7373 81.5183 31.8823C81.5183 30.6858 81.9724 29.6655 82.8806 28.8215C83.7981 27.9682 84.9678 27.5415 86.3898 27.5415C87.3622 27.5415 88.2751 27.7595 89.1283 28.1954C89.9907 28.6221 90.72 29.2388 91.3163 30.0458Z"
+                        fill="#9DA8B8" />
+                    <path
+                        d="M94.6273 21.6982C95.2878 21.6982 95.8521 21.9393 96.3199 22.4216C96.797 22.9039 97.0355 23.4883 97.0355 24.1746C97.0355 24.8517 96.8016 25.4314 96.3337 25.9137C95.8658 26.3868 95.3062 26.6233 94.6548 26.6233C93.9851 26.6233 93.4117 26.3821 92.9347 25.8998C92.4668 25.4082 92.2328 24.8146 92.2328 24.119C92.2328 23.4512 92.4668 22.8808 92.9347 22.4077C93.4025 21.9347 93.9668 21.6982 94.6273 21.6982ZM92.742 27.9311H96.5126V43.068H92.742V27.9311Z"
+                        fill="#9DA8B8" />
+                    <path
+                        d="M109.58 27.9311H113.323V40.8977C113.323 43.4576 112.814 45.3404 111.796 46.5462C110.429 48.1786 108.369 48.9948 105.617 48.9948C104.149 48.9948 102.915 48.8093 101.915 48.4383C100.915 48.0673 100.071 47.5201 99.3832 46.7966C98.6951 46.0825 98.186 45.2106 97.8557 44.1811H101.998C102.365 44.6077 102.837 44.9277 103.415 45.141C103.993 45.3636 104.677 45.4749 105.466 45.4749C106.475 45.4749 107.287 45.3173 107.901 45.0019C108.516 44.6865 108.947 44.2784 109.195 43.7776C109.452 43.2767 109.58 42.4141 109.58 41.1898C108.92 41.8576 108.227 42.3399 107.502 42.6367C106.778 42.9243 105.957 43.068 105.039 43.068C103.03 43.068 101.333 42.3353 99.9474 40.8698C98.5621 39.4044 97.8695 37.5493 97.8695 35.3048C97.8695 32.9025 98.6034 30.9733 100.071 29.5171C101.402 28.2 102.989 27.5415 104.833 27.5415C105.695 27.5415 106.507 27.7038 107.268 28.0284C108.039 28.3438 108.81 28.8678 109.58 29.6006V27.9311ZM105.686 31.0892C104.502 31.0892 103.525 31.4927 102.755 32.2996C101.984 33.0973 101.599 34.1036 101.599 35.3187C101.599 36.5801 101.993 37.6143 102.782 38.4212C103.571 39.2281 104.562 39.6316 105.755 39.6316C106.92 39.6316 107.879 39.2374 108.631 38.449C109.392 37.6607 109.773 36.6265 109.773 35.3465C109.773 34.0851 109.392 33.0602 108.631 32.2718C107.869 31.4834 106.888 31.0892 105.686 31.0892Z"
+                        fill="#9DA8B8" />
+                    <path
+                        d="M115.712 27.9311H119.455V29.4754C120.309 28.7519 121.079 28.251 121.767 27.9728C122.465 27.6853 123.176 27.5415 123.9 27.5415C125.387 27.5415 126.648 28.0655 127.685 29.1136C128.556 30.004 128.992 31.3211 128.992 33.0648V43.068H125.277V36.4317C125.277 34.6231 125.194 33.4219 125.029 32.8283C124.873 32.2347 124.593 31.7849 124.189 31.4788C123.795 31.1634 123.304 31.0058 122.717 31.0058C121.955 31.0058 121.3 31.2655 120.749 31.7849C120.208 32.295 119.832 33.0045 119.621 33.9135C119.511 34.3865 119.455 35.4114 119.455 36.9882V43.068H115.712V27.9311Z"
+                        fill="#9DA8B8" />
+                    <path
+                        d="M35.9869 50.8213V52.4909C36.6658 51.8045 37.3998 51.2897 38.1888 50.9466C38.9777 50.6034 39.8218 50.4318 40.7208 50.4318C42.6749 50.4318 44.3355 51.1784 45.7024 52.6717C47.0694 54.165 47.7529 56.0803 47.7529 58.4177C47.7529 60.6715 47.0465 62.559 45.6336 64.0801C44.2208 65.592 42.5465 66.3479 40.6107 66.3479C39.7484 66.3479 38.9456 66.1948 38.2025 65.8888C37.4594 65.5734 36.7209 65.0633 35.9869 64.3584V71.4956H32.2576V50.8213H35.9869ZM39.9364 53.9378C38.753 53.9378 37.7713 54.3459 36.9915 55.1621C36.2117 55.9783 35.8218 57.0449 35.8218 58.362C35.8218 59.7069 36.2117 60.7967 36.9915 61.6315C37.7713 62.457 38.753 62.8697 39.9364 62.8697C41.0832 62.8697 42.0465 62.4477 42.8263 61.6037C43.6153 60.7596 44.0098 59.6837 44.0098 58.3759C44.0098 57.0774 43.6245 56.0154 42.8538 55.1899C42.0832 54.3552 41.1107 53.9378 39.9364 53.9378Z"
+                        fill="#65758C" />
+                    <path
+                        d="M64.4536 59.4889H52.3849C52.5593 60.5649 53.0226 61.4228 53.7748 62.0628C54.5363 62.6935 55.5042 63.0088 56.6785 63.0088C58.0821 63.0088 59.2885 62.5126 60.2977 61.5202L63.4628 63.0228C62.6738 64.1543 61.7289 64.9937 60.628 65.541C59.5271 66.0789 58.2197 66.3479 56.706 66.3479C54.3574 66.3479 52.4446 65.6012 50.9675 64.1079C49.4905 62.6054 48.752 60.7272 48.752 58.4733C48.752 56.1638 49.4859 54.2485 50.9538 52.7274C52.4308 51.197 54.2794 50.4318 56.4996 50.4318C58.8574 50.4318 60.7748 51.197 62.2518 52.7274C63.7289 54.2485 64.4674 56.2612 64.4674 58.7655L64.4536 59.4889ZM60.683 56.4977C60.4353 55.6537 59.9445 54.9673 59.2106 54.4386C58.4858 53.91 57.6418 53.6456 56.6785 53.6456C55.6326 53.6456 54.7152 53.9424 53.9262 54.536C53.4308 54.907 52.9721 55.5609 52.5501 56.4977H60.683Z"
+                        fill="#65758C" />
+                    <path
+                        d="M66.0995 50.8213H69.8426V52.3657C70.6958 51.6422 71.4664 51.1413 72.1545 50.8631C72.8517 50.5756 73.5627 50.4318 74.2875 50.4318C75.7737 50.4318 77.0352 50.9558 78.0718 52.0039C78.9434 52.8943 79.3792 54.2114 79.3792 55.9551V65.9583H75.6636V59.322C75.6636 57.5133 75.581 56.3122 75.4159 55.7186C75.2599 55.125 74.9801 54.6752 74.5765 54.3691C74.182 54.0537 73.6912 53.896 73.104 53.896C72.3425 53.896 71.6866 54.1558 71.1361 54.6752C70.5949 55.1853 70.2187 55.8948 70.0077 56.8038C69.8976 57.2768 69.8426 58.3017 69.8426 59.8785V65.9583H66.0995V50.8213Z"
+                        fill="#65758C" />
+                    <path
+                        d="M92.6809 44.978H96.424V65.9583H92.6809V64.3584C91.9469 65.0633 91.2084 65.5734 90.4653 65.8888C89.7314 66.1948 88.9332 66.3479 88.0708 66.3479C86.1351 66.3479 84.4608 65.592 83.0479 64.0801C81.6351 62.559 80.9287 60.6715 80.9287 58.4177C80.9287 56.0803 81.6122 54.165 82.9791 52.6717C84.3461 51.1784 86.0066 50.4318 87.9607 50.4318C88.8598 50.4318 89.7038 50.6034 90.4928 50.9466C91.2818 51.2897 92.0112 51.8045 92.6809 52.4909V44.978ZM88.7314 53.9378C87.5662 53.9378 86.5984 54.3552 85.8277 55.1899C85.0571 56.0154 84.6718 57.0774 84.6718 58.3759C84.6718 59.6837 85.0617 60.7596 85.8415 61.6037C86.6305 62.4477 87.5984 62.8697 88.7451 62.8697C89.9286 62.8697 90.9102 62.457 91.6901 61.6315C92.4699 60.7967 92.8598 59.7069 92.8598 58.362C92.8598 57.0449 92.4699 55.9783 91.6901 55.1621C90.9102 54.3459 89.924 53.9378 88.7314 53.9378Z"
+                        fill="#65758C" />
+                    <path d="M98.4001 50.8213H102.171V65.9583H98.4001V50.8213Z" fill="#65758C" />
+                    <path
+                        d="M104.174 50.8213H107.917V52.3657C108.771 51.6422 109.541 51.1413 110.229 50.8631C110.927 50.5756 111.638 50.4318 112.362 50.4318C113.849 50.4318 115.11 50.9558 116.147 52.0039C117.018 52.8943 117.454 54.2114 117.454 55.9551V65.9583H113.738V59.322C113.738 57.5133 113.656 56.3122 113.491 55.7186C113.335 55.125 113.055 54.6752 112.651 54.3691C112.257 54.0537 111.766 53.896 111.179 53.896C110.417 53.896 109.761 54.1558 109.211 54.6752C108.67 55.1853 108.294 55.8948 108.083 56.8038C107.972 57.2768 107.917 58.3017 107.917 59.8785V65.9583H104.174V50.8213Z"
+                        fill="#65758C" />
+                    <path
+                        d="M130.756 50.8213H134.499V63.788C134.499 66.3479 133.99 68.2307 132.971 69.4365C131.604 71.0689 129.545 71.8851 126.792 71.8851C125.325 71.8851 124.091 71.6996 123.091 71.3286C122.091 70.9576 121.247 70.4104 120.559 69.6869C119.871 68.9727 119.361 68.1009 119.031 67.0713H123.173C123.54 67.498 124.013 67.818 124.591 68.0313C125.169 68.2539 125.852 68.3652 126.641 68.3652C127.65 68.3652 128.462 68.2075 129.077 67.8922C129.692 67.5768 130.123 67.1687 130.37 66.6679C130.627 66.167 130.756 65.3044 130.756 64.0801C130.095 64.7479 129.403 65.2302 128.678 65.527C127.953 65.8146 127.132 65.9583 126.214 65.9583C124.205 65.9583 122.508 65.2256 121.123 63.7601C119.737 62.2947 119.045 60.4396 119.045 58.1951C119.045 55.7928 119.779 53.8636 121.247 52.4074C122.577 51.0903 124.164 50.4318 126.008 50.4318C126.87 50.4318 127.682 50.5941 128.444 50.9187C129.214 51.2341 129.985 51.7581 130.756 52.4909V50.8213ZM126.861 53.9795C125.678 53.9795 124.701 54.383 123.93 55.1899C123.159 55.9876 122.774 56.9939 122.774 58.209C122.774 59.4704 123.169 60.5046 123.958 61.3115C124.747 62.1184 125.737 62.5219 126.93 62.5219C128.095 62.5219 129.054 62.1277 129.806 61.3393C130.568 60.5509 130.948 59.5168 130.948 58.2368C130.948 56.9754 130.568 55.9505 129.806 55.1621C129.045 54.3737 128.063 53.9795 126.861 53.9795Z"
+                        fill="#65758C" />
+                    <path
+                        d="M25.3868 14.6285C11.3868 14.6285 7.38674 25.6285 7.38674 31.6285L16.3867 34.6285C16.2201 34.2952 15.8867 32.6285 15.8867 30.6285C15.8867 27.6285 18.8867 21.6285 25.3868 21.6285C29.8867 21.6285 38.8867 25.1285 43.3867 26.6285V10.6285L35.8867 7.62854V17.6285C35.8867 17.6285 31.3867 14.6285 25.3868 14.6285Z"
+                        fill="#9DA8B8" />
+                    <path
+                        d="M25.3867 47.6285C39.3867 47.6285 43.3867 36.6285 43.3867 30.6285L34.3867 27.6285C34.5534 27.9619 34.8867 29.6285 34.8867 31.6285C34.8867 34.6285 31.8867 40.6285 25.3867 40.6285C20.8867 40.6285 11.8867 37.1285 7.38673 35.6285V51.6285L14.8867 54.6285V44.6285C14.8867 44.6285 19.3867 47.6285 25.3867 47.6285Z"
+                        fill="#65758C" />
+                </svg>
+            </picture>
+            <ul class="social">
+                <li><a title="Find me on LinkedIn" href="https://www.linkedin.com/in/tfriberg/" target="_blank"><i
+                            class="fab fa-linkedin fa-2x"></i></a></li>
+                <li><a title="Find me on Github" href="https://github.com/tfriberg" target="_blank"><i
+                            class="fab fa-github fa-2x"></i></a></li>
+                <li><a title="Book a meeting with Simplymeet" href="https://app.simplymeet.me/designpending/"
+                        target="_blank"><i class="fas fa-calendar-days fa-2x"></i></a></li>
+            </ul>
+        </div>
+
+        <h2>Passionate and inquisitive UX designer and information architect.</h2>
+        <h3> Services:</h3>
+        <p>
+        <ul class="services">
+            <li><i class="fa fa-chalkboard-user"></i> User experience (UX) and interaction design (IxD)</li>
+            <li><i class="fa fa-pen-ruler"></i> Wireframes and flows</li>
+            <li><i class="fa fa-chart-diagram"></i> Information architecture (IA)</li>
+            <li><i class="fa fa-bullseye"></i> Impact mapping</li>
         </ul>
+        </p>
+        <h3>Background:</h3>
+        <p>I am a seasoned UX designer and information architect, with more than 25 years in the field.</p>
+        <p>The designs are adapted to specified user needs and goals while being intuitive, easy to use, and affordable
+            to implement.</p>
+        <p>My only (not-so-)secret sauce is to ask why? why? why? until I understand what the users' needs and goals
+            are, and what problems the service is trying to solve for whom and how.</p>
+        </p>
+        <h3>Download my:</h3>
+        <p><a title="Download my resume" href=""><i class="fas fa-file-pdf"></i> Resume</a> | <a title="Download my CV"
+                href=""><i class="fas fa-file-pdf"></i> CV</a></p>
+        <div class="footer">
+            <ul>
+                <li>© Design Pending 2001-2025</li>
+                <li><a title="Send me a mail" href="mailto:hello@designpending.com">
+                        <i class="fas fa-envelope"></i> hello@designpending.com</a>
+                    |
+                    <a title="Give me a call" href="tel:+0046702655711">
+                        <i class="fas fa-phone-alt"></i> +46 (0)702-655 711</a>
+                </li>
+                <li><a title="See where I'm located" href="https://maps.app.goo.gl/991nXJCnHQoLFNpJ8" target="_blank"><i
+                            class="fa fa-map-location-dot"></i> Gusselhyttan 181, SE71193, Lindesberg, Sweden</a></li>
+                <li>F-tax certificate | VAT SE700412053601 |
+                    <a title="Pay via Revolut.me" href="https://revolut.me/tomasfriberg"><i
+                            class="fas fa-credit-card"></i> revolut.me</a>
+                </li>
+                <li>IBAN: LT63 3250 0671 0448 5736 | BIC: REVOLT21</li>
+            </ul>
+        </div>
+
     </div>
-    <div class="container_footer">
-        <ul class="footer">
-            <li>© Design Pending 2001-2025</li>
-            <li><a title="Send me a mail" href="mailto:hello@designpending.com">
-                    <i class="fas fa-envelope"></i>&nbsp;hello@designpending.com</a>
-                &nbsp;|&nbsp;
-                <a title="Give me a call" href="tel:+0046702655711">
-                    <i class="fas fa-phone-alt"></i>&nbsp;+46 (0)702-655 711</a>
-            </li>
-            <li><a title="See where I'm located" href="https://maps.app.goo.gl/991nXJCnHQoLFNpJ8" target="_blank"><i
-                        class="fa fa-map-location-dot"></i>&nbsp;Gusselhyttan 181, SE71193, Lindesberg, Sweden</a></li>
-            <li>F-tax certificate | VAT SE700412053601&nbsp;|&nbsp;
-                <a title="Pay via Revolut.me" href="https://revolut.me/tomasfriberg"><i
-                        class="fas fa-credit-card"></i>&nbsp;revolut.me</a>
-            </li>
-            <li>IBAN: LT63 3250 0671 0448 5736&nbsp;|&nbsp;BIC: REVOLT21</li>
-        </ul>
-    </div>
+
+
 </body>
 
 </html>
